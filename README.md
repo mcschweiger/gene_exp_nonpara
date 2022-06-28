@@ -7,28 +7,28 @@ This repository contains a folder, './Datasets', which contains all the data fil
 
 Each data file is a .mat file containing the information required by the data. See any of the examples listed above for details of information required by the method. We note the fact that the variable named 'ground' is not required and is only used in the case of synthetic data, where ground truth parameters are known. In general, the method requires hand-input data with the following information:
 
-data.M    : The maximum number of RNA obeserved across ALL time points.
+      data.M    : The maximum number of RNA obeserved across ALL time points.
 
-data.t_f  : The duration of the experiment.
+      data.t_f  : The duration of the experiment.
 
-data.obs_t: 1D array of collection times of RNA counts (note that these two quantities will determine the units of all rates output by the method. i.e. if times are provided in seconds, rates will be in seconds^-1).
+      data.obs_t: 1D array of collection times of RNA counts (note that these two quantities will determine the units of all rates output by the method.         i.e. if times are provided in seconds, rates will be in seconds^-1).
 
-data.J    : The number of cells per time point. If this varies across time points, provide as a 1D array of the same shape as data.obs_t.
+      data.J    : The number of cells per time point. If this varies across time points, provide as a 1D array of the same shape as data.obs_t.
 
-data.K    : The number of observation times.
+      data.K    : The number of observation times.
 
-units     : A structure containing relevant units. This is not used for computation, only for visualization purposes.
+      units     : A structure containing relevant units. This is not used for computation, only for visualization purposes.
 
 
 This repository contains 4 main MATLAB scripts, contined in './code':
 
-run.m              : will run the method for 10000 iterations on an example synthetic dataset. (Expected demo wall time: ~5days)
+      run.m              : will run the method for 10000 iterations on an example synthetic dataset. (Expected demo wall time: ~5days)
 
-run_continue.m     : will continue the method for an additional 10000 iterations on the same example synthetic dataset.
+      run_continue.m     : will continue the method for an additional 10000 iterations on the same example synthetic dataset.
 
-run_experimental.m : will run the method for 10000 iterations on an example experimental dataset.
+      run_experimental.m : will run the method for 10000 iterations on an example experimental dataset.
 
-visualize_results.m: will visualize results from the './results' folder.
+      visualize_results.m: will visualize results from the './results' folder.
 
 Each of these scripts can be run on user-provided data, as long as it is formatted to match the examples provided.
 
