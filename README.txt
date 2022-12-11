@@ -2,7 +2,7 @@ Our method can be run on any machine capable of running MATLAB2021a with the Par
 
 
 
-This repository contains a folder, './Datasets', which contains all the data files that were used in the work.
+This repository contains a folder, './Datasets', which contains all the data files that were used in the work. Synthetic datasets were generated using the 'generate_simulated_data.m' funciton.
 
 
 Each data file is a .mat file containing the information required by the data. See any of the examples listed above for details of information required by the method. We note the fact that the variable named 'ground' is not required and is only used in the case of synthetic data, where ground truth parameters are known. In general, the method requires hand-input data with the following information:
